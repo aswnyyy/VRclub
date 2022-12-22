@@ -1,0 +1,555 @@
+@font-face {
+  font-family: "Dela Gothic One";
+
+  @import url("./assets/fonts/DelaGothicOne-Regular.ttf");
+}
+@import "./styles/reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+$wrapper-w: 1400px;
+$text-color: #fff;
+$brand-color: #e32966;
+$grey: #c7c7c7;
+$dark: #101315;
+* {
+  color: $text-color;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Montserrat, "Dela Gothic One";
+}
+body {
+  background: url(./assets/img/woman-6882918\ 1.jpg),
+    url(./assets/img/Rectangle.png);
+  background-repeat: no-repeat;
+  background-size: 100% 900px;
+  background-color: $dark;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  margin-top: 43px;
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 122px;
+    margin-right: auto;
+    .nav-link {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 160%;
+      /* identical to box height, or 24px */
+
+      display: flex;
+      align-items: center;
+
+      color: #ffffff;
+    }
+  }
+  .btn {
+    margin-right: 24px;
+  }
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: $wrapper-w;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  /* identical to box height, or 24px */
+
+  color: #ffffff;
+  border-radius: 32px;
+  padding: 8px 20px;
+}
+.btn-outline-wh {
+  border: 1px solid #ffffff;
+}
+.pink-btn {
+  background: #e32966;
+  box-shadow: 0px 9px 26px rgba(227, 41, 102, 0.3);
+  padding: 12px 30px;
+}
+.pink-btn-outline {
+  border: 1.5px solid #e32966;
+  padding: 12px 30px;
+}
+.main {
+  .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.promo {
+  .heading {
+    max-width: 489px;
+    font-family: "Dela Gothic One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 118%;
+    /* or 57px */
+    color: #ffffff;
+    margin-top: 194px;
+    margin-bottom: 16px;
+  }
+  .p-text {
+    max-width: 464px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    /* or 29px */
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    margin-bottom: 175px;
+  }
+  .social-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 79px;
+  }
+}
+.subheading {
+  font-family: "Dela Gothic One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 118%;
+  /* or 47px */
+  color: #ffffff;
+  margin-top: 91px;
+  margin-bottom: 62px;
+}
+.about {
+  .content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    .text-content {
+      max-width: 337px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 35px;
+    }
+    .text {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 118%;
+      /* or 21px */
+
+      color: #ffffff;
+    }
+  }
+}
+.halls {
+  .halls-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .halls-item {
+      background: radial-gradient(
+            72.18% 43.92% at 50% 93.92%,
+            #a40a79 0%,
+            rgba(0, 0, 0, 0) 100%
+          )
+          /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+        radial-gradient(
+            37.71% 30.53% at 4.78% 4.31%,
+            #008df3 0%,
+            rgba(0, 0, 0, 0) 100%
+          )
+          /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+        radial-gradient(
+            51.22% 43.71% at 98.22% 1.22%,
+            #dc18c8 0%,
+            rgba(0, 0, 0, 0) 100%
+          )
+          /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+        rgba(22, 43, 237, 0.5);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 391px;
+    }
+    .halls-title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 118%;
+      /* or 21px */
+
+      color: #ffffff;
+      margin-top: 26px;
+      margin-bottom: 9px;
+    }
+    .halls-text {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 118%;
+      /* or 21px */
+
+      color: #ffffff;
+      margin-bottom: 22px;
+      text-align: center;
+      max-width: 319px;
+    }
+    .btn {
+      margin-top: 0px;
+      margin-bottom: 40px;
+    }
+  }
+}
+.play {
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .swiper-menu {
+      max-width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 43px;
+      .swiper-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 0;
+        background: none;
+      }
+    }
+    .swiper {
+      width: 100%;
+      max-width: 914px;
+      margin: 0;
+      margin-right: 78px;
+      margin-left: auto;
+      .swiper-button-prev,
+      .swiper-button-next {
+        color: #e32966;
+      }
+    }
+  }
+}
+.table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  .thead {
+    width: 100%;
+
+    .td-h {
+      position: relative;
+      width: 347px;
+      height: 131px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #1f1f22;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 118%;
+      /* identical to box height, or 24px */
+      color: #ffffff;
+      .player {
+        position: absolute;
+        bottom: 20px;
+        left: 21px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 118%;
+        /* or 24px */
+
+        color: #ffffff;
+      }
+      .time {
+        position: absolute;
+        top: 20px;
+        right: 21px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 118%;
+        /* or 24px */
+
+        color: #ffffff;
+      }
+    }
+    .td-h:first-child {
+      background: url(./assets/Rectangle\ 16.svg) bottom left,
+        url(./assets/Rectangle\ 17.svg) top right;
+      background-size: contain, contain;
+      background-repeat: no-repeat;
+    }
+  }
+  .tbody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    .td {
+      width: 347px;
+      height: 98px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(196, 196, 196, 0.2);
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 118%;
+      /* identical to box height, or 24px */
+
+      color: #ffffff;
+    }
+  }
+}
+.price {
+  .pink-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: center;
+    margin-top: 34px;
+  }
+}
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gallery {
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .gallery-card {
+    width: 446px;
+    height: 529px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 73px;
+    background: radial-gradient(
+          72.18% 43.92% at 50% 93.92%,
+          #a40a79 0%,
+          rgba(0, 0, 0, 0) 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+      radial-gradient(
+          37.71% 30.53% at 4.78% 4.31%,
+          #008df3 0%,
+          rgba(0, 0, 0, 0) 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+      radial-gradient(
+          51.22% 43.71% at 98.22% 1.22%,
+          #dc18c8 0%,
+          rgba(0, 0, 0, 0) 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+      rgba(22, 43, 237, 0.5);
+    position: relative;
+    &::after {
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+
+    box-shadow: 0px 8px 24px rgba(129, 135, 189, 0.15);
+    gap: 27px;
+    z-index: 1;
+  }
+  .gallery-text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 118%;
+    /* or 21px */
+
+    color: #ffffff;
+    max-width: 281px;
+    z-index: 2;
+  }
+  .swiper-navigation {
+    display: flex;
+    gap: 103px;
+    position: absolute;
+    bottom: 85px;
+    z-index: 9999;
+    left: 150px;
+    * {
+      cursor: pointer;
+    }
+  }
+  .swiper-pagination {
+    bottom: 85px;
+  }
+}
+.contacts {
+  width: 100%;
+  margin-top: 108px;
+  margin-bottom: 66px;
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 39px;
+  }
+  .infobar {
+    gap: 24px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 308px;
+    .subheading {
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+    .subheading-small {
+      font-family: "Dela Gothic One";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 118%;
+      /* or 28px */
+
+      color: #ffffff;
+    }
+    .contacts-text {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 118%;
+      /* or 21px */
+
+      color: #ffffff;
+    }
+    .socials {
+      display: flex;
+      gap: 27px;
+      align-items: center;
+    }
+  }
+  .map {
+    width: 100%;
+  }
+}
+.footer {
+  width: 100%;
+  height: 111px;
+  position: relative;
+  background: radial-gradient(
+        72.18% 43.92% at 50% 93.92%,
+        #a40a79 0%,
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        37.71% 30.53% at 4.78% 4.31%,
+        #008df3 0%,
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        51.22% 43.71% at 98.22% 1.22%,
+        #dc18c8 0%,
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    rgba(22, 43, 237, 0.5);
+
+  box-shadow: 0px 8px 24px rgba(129, 135, 189, 0.15);
+  .logo-link {
+    z-index: 3;
+  }
+  .wrapper {
+    justify-content: space-between;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 160%;
+    /* identical to box height, or 24px */
+
+    color: #ffffff;
+    z-index: 3;
+  }
+  .copyrights {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 3;
+  }
+  .copy-link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #c7c7c7;
+  }
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+}
